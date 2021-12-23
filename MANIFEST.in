@@ -1,0 +1,13 @@
+include README.rst
+include VERSION
+include requirements.txt
+
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+
+recursive-include botDomains/resources *
+recursive-include botDomains/search_domains/resources *
+recursive-include web-drivers *
+
+# If including data files in the package, add them like:
+# include path/to/data_file
