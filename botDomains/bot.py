@@ -29,7 +29,7 @@ class Bot(WebBot):
             self.maestro.finish_task(
                 task_id=execution.task_id,
                 status=AutomationTaskFinishStatus.FAILED,
-                message="Task Finished OK."
+                message="Task Finished - ERRO: %s" % e
             )
 
         zip = zip_result_files()
